@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Ibarra Fotografo Profesional - Peru</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/fotos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navDesk">
+            <div class="logoNav"> C<span>I</span></div>
+            <ul class="navItems">
+                <li><a href="./index.html">HOME</a> </li>
+                <li><a href="#" class="position-relative active">FOTOS</a> </li>
+                <li><a href="./videos.html" class="position-relative">VIDEOS</a> </li>
+                <li><a href="./sobreMi.html" class="position-relative">SOBRE MI</a> </li>
+                <li><a href="./contacto.html" class="position-relative">CONTACTO</a> </li>
+            </ul>
+        </nav>
+        <nav class="navMobile">
+            <div class="logoNav"> C<span>I</span></div>
+            <div class="btnNav" onclick="activarOrDesactivar()">
+                <span class="burgerT"></span>
+                <span class="burgerM"></span>
+                <span class="burgerB"></span>
+            </div>
+            <div class="navSlide">
+                <ul class="navItems">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="#" class="active">FOTOS</a></li>
+                    <li><a href="./videos.html">VIDEOS</a></li>
+                    <li><a href="./sobreMi.html">SOBRE MI</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="app">
+        <div class="stickyWhatsapp"> <i class='bx bxl-whatsapp' @click="redireccionar('WHATSAPP')"></i></div>
+
+
+        <div class="fondoModal ">
+            <div class="bodyModal">
+                <span @click="openFullScreen">X</span>
+                <div class="img" :style="'background-image:url('+imgFocus+');'"></div>
+            </div>
+        </div>
+
+        <div class="contenedor">
+
+
+            <div class="gallery-container" :class="img.h + ' ' + img.w" v-for="img in imagenesHardcodeadas"
+                @click="openFullScreen(img)">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img :src=img.url alt="Gallery1">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KB04P4P15R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KB04P4P15R');
+    </script>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./scripts/data/videos.js"></script>
+    <script src="./scripts/data/imagenes.js"></script>
+    <script src="./scripts/gallery.js"></script>
+</body>
+
+</html>

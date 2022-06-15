@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,600;1,400&display=swap');
+
+:root {
+    --colorMain: #d17f21;
+}
+
+/* ===========NORMALIZACION=========== */
+* {
+    font-family: 'IBM Plex Sans Condensed', sans-serif !important;
+
+}
+body {
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23ae984f' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E");   
+
+}
+
+/* ===========ELEMENTOS SUELTOS=========== */
+
+.stickyWhatsapp {
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    position: fixed;
+    z-index: 99;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 90%;
+    left: 79%;
+    transition: 1s;
+}
+
+.stickyWhatsapp i {
+    color: white;
+    font-size: 2rem;
+    z-index: 100;
+    text-shadow: 0px -2px 24px black;
+
+}
+.stickyWhatsapp:hover {
+    cursor: pointer;
+}
+/* ===========HERO SECTION=========== */
+
+.hero {
+    min-height: 100vh;
+
+}
+
+.carousel-item {
+    width: 100vw;
+    height: 79vh;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+.carousel-item:first-child {
+    background-image: url("https://cdn.filestackcontent.com/mUVYNo0TS5GotoeWaw34");
+}
+.textHero {
+    box-shadow: 0px -30px 70px black;
+    position: relative;
+}
+
+.textHero h2 {
+    color: white;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+    text-align: start;
+    padding-left: 1.6rem;
+    padding-top: .5rem;
+}
+
+.textHero h2 span+svg {
+    top: -17px !important;
+}
+
+.textHero div {
+    width: 4px;
+    height: 92px;
+    background-color: var(--colorMain);
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 10px;
+}
+
+/* ===========ABOUT ME SECTION=========== */
+
+
+.about {
+    min-height: 20rem;
+    width: 100%;
+    align-items: center;
+    display: grid;
+    padding-bottom: 2rem;
+}
+
+.aboutMeImgs {
+    display: grid;
+    height: 90%;
+    padding-top: 2.3rem;
+}
+
+.aboutMeTxt {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .5rem;
+    height: auto;
+}
+
+.aboutMeTxt .padreAbout {
+    position: relative;
+    flex-grow: 1;
+}
+
+.aboutMeTxt .padreAbout p {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50px;
+    left: -4.6rem;
+    color: #d17f21;
+    font-variant: all-petite-caps;
+    font-size: 1.2rem;
+    letter-spacing: .4rem;
+    font-family: 'Anton', sans-serif !important;
+    width: 10rem;
+}
+
+.aboutMeTxt div:last-child {
+    width: 93%;
+    text-align: end;
+    padding-left: 1rem;
+}
+
+.aboutMeTxt div:last-child p {
+    width: 95%;
+    color: white;
+    text-shadow: 0px 0px 20px black;
+    font: message-box;
+    font-size: 16px;
+}
+
+
+.about .redSocial {
+    width: 90%;
+    height: 4rem;
+    background-color: aliceblue;
+    margin-bottom: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.about :is(.redSocial.div1, .redSocial.div2, .redSocial.div3) {
+    background-position: center;
+    background-size: cover;
+    filter: blur(1.3px);
+    filter: grayscale(100%);
+    transition: .4s;
+    border-radius: 6px;
+}
+
+.about :is(.redSocial.div1:hover, .redSocial.div2:hover, .redSocial.div3:hover) {
+    background-position: center;
+    background-size: cover;
+    filter: blur(1.3px);
+    filter: grayscale(0%);
+}
+
+.about .redSocial.div1 {
+    background-image: url("https://cdn.filestackcontent.com/dO500LsFT7eB6OsAcLOz");
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: center;
+    align-self: stretch;
+}
+
+.about .redSocial.div2 {
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: center;
+    align-self: stretch;
+    background-image: url("https://cdn.filestackcontent.com/Th7h845DTtixn1pM1Pkt");
+}
+
+.about .redSocial.div3 {
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: center;
+    align-self: stretch;
+    background-image: url("https://cdn.filestackcontent.com/Xk7WJhGrRdOMJoDkpsIg");
+}
+
+.about .redSocial p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 2.6rem;
+    letter-spacing: .15rem;
+    color: #fffffff5;
+    transition: .2s;
+}
+
+.about .redSocial:hover p {
+    letter-spacing: .3rem;
+}
+
+/* ===========SEPARADOR=========== */
+
+.custom-shape-divider-top-1654969944 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    box-shadow: 5px 20px 15px black;
+}
+
+.custom-shape-divider-top-1654969944 svg {
+    position: relative;
+    display: block;
+    width: calc(117% + 1.3px);
+    height: 30px;
+}
+
+.custom-shape-divider-top-1654969944 .shape-fill {
+    fill: black;
+}
+
+/* ===========VIDEOS=========== */
+
+.videos{
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+.contenedorVideo{
+    position: relative;
+    opacity: 1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 94vh;
+    z-index: 1;
+}
+#video_background {
+    
+    position: absolute;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+    opacity: 0.9;
+    
+}
+
+.videoFullScreen{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    transition: 1s;
+    z-index: -1;
+}
+
+.videoFullScreen.active{
+    background-color: #000000a8;
+    z-index: 99999999;
+}
+
+html.active{
+    overflow-y: hidden;
+}
+
+.fondoModal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(0 0 0 / 56%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+
+.fondoModal.active{
+    z-index: 20;
+    opacity: 1;
+}
+
+.contenedor.active{
+    filter: blur(2px);
+}
+
+.bodyModal{
+    width: 95vw;
+    height: 95vh;
+    padding-top: 3rem;
+    background-color: rgba(43, 43, 43, 0);
+    position: relative;
+}
+
+.bodyModal span{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    left:96%;
+    bottom: 93%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.bodyModal .img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bodyModal iframe{
+    width: 100%;
+    height: 100%;
+}
+/* ===========MEDIAS=========== */
+
+@media (min-width: 360px) {
+    .textHero div {
+        height: 135px;
+    }
+
+  
+}
+
+@media (min-width: 330px) {
+    .textHero div {
+        height: 94px;
+    }
+
+  
+
+}
+
+@media (min-width: 415px) {
+
+    .textHero div {
+        height: 81px;
+        top: 34px;
+    }
+
+    .textHero h2 {
+        padding-top: 2rem;
+    }
+    .stickyWhatsapp {
+left: 86%;
+    }
+    
+}
+@media (min-width: 700px) {
+    .about {
+        min-height: 20rem;
+        width: 100%;
+        align-items: center;
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 17px 0px;
+    }
+    .about .redSocial {
+        width: 69%;
+        height: 7rem;
+    }
+
+}
+
+@media (min-width: 800px) {
+
+    .about .aboutMeTxt{
+        height: 27rem;
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .textHero h2 {
+        padding-top: 3rem;
+        font-size: 3rem;
+        padding-left: 5rem;
+    }
+
+    .textHero div {
+        top: 61px;
+        left: 23px;
+        height: 99px;
+
+
+    }
+
+    .stickyWhatsapp {
+
+        left: 91%;
+    }
+    .aboutMeTxt div:last-child {
+        width: 98%;
+    }
+    .aboutMeTxt .padreAbout p{
+        left: -4rem;
+        top: 87px;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+
+    .textHero h2 {
+        padding-top: 3rem;
+        padding-left: 4rem;
+    }
+
+    .textHero div {
+        top: 42px;
+        height: 76px;
+        left: 23px;
+
+
+    }
+
+    .stickyWhatsapp {
+
+        left: 94%;
+    }
+
+}

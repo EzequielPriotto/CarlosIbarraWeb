@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,600;1,400&display=swap');
+
+
+
+:root {
+    --colorMain: #d17f21;
+}
+
+* {
+    font-family: 'IBM Plex Sans Condensed', sans-serif !important;
+
+}
+
+body {
+    background-color: rgb(22 22 22);
+}
+
+.redesSociales {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    padding-bottom: .4rem;
+    color: #dfd6d6;
+    gap: 2.5rem;
+    padding-left: 3rem;
+    border-bottom: 2px solid #dfd6d6;
+}
+
+.redesSociales div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: .3rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.redesSociales div::before {
+    position: absolute;
+    content: "";
+    width: 1rem;
+    height: .07rem;
+    background-color: var(--colorMain);
+    left: -1.5rem;
+}
+
+.redesSociales div i {
+    color: var(--colorMain);
+    font-size: 1.5rem;
+}
+
+.espacio {
+    height: 3.8rem;
+}
+
+.mainContent {
+    display: flex;
+}
+
+.mainText {
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.mainText>p {
+    margin-bottom: 0;
+    color: var(--colorMain);
+    font-variant: all-petite-caps;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.mainText h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.mainText h1 span {}
+
+.mainContent .descripcion {
+    width: 57%;
+    padding-left: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    font-style: oblique;
+    text-align: left;
+}
+.descripcion span{
+    color: var(--colorMain);
+}
+.mainContent>div {
+    width: 43%;
+    display: flex;
+    justify-content: center;
+}
+
+.fotoCarlos {
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../assets/carlos.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.5);
+    border-radius: 47% 67% / 53%;
+    margin-top: 4rem;
+}
+
+.titulos {
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.titulos img:nth-child(1) {
+        border-radius: 12px;
+    background-image: url(../assets/Titulo-cine-300x218.jpg);
+    background-position: 3%;
+}
+
+.titulos img:nth-child(2) {
+    border-radius: 12px;
+    background-image: url("../assets/Master-en-Marketing-300x207.jpg");
+}
+
+.titulos img:nth-child(3) {
+        border-radius: 12px;
+    background-image: url("../assets/Marketing-por-la-Universidad-de-davis-1-300x232.jpg");
+}
+
+/* ===========ELEMENTOS SUELTOS=========== */
+
+.stickyWhatsapp {
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    position: fixed;
+    z-index: 99;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 90%;
+    left: 79%;
+    transition: 1s;
+}
+.stickyWhatsapp:hover {
+    cursor: pointer;
+}
+.stickyWhatsapp i {
+    color: white;
+    font-size: 2rem;
+    z-index: 100;
+    text-shadow: 0px -2px 24px black;
+
+}
+@media (min-width: 415px) {
+    .stickyWhatsapp {
+        left: 86%;
+            }
+}
+@media (max-width: 800px) {
+    
+    .imgTitulo {
+        width: 17.6rem;
+        height: 12rem;
+        transform: scale(1);
+        background-size: auto;
+        background-position: center;
+        border-radius: 2px;
+    }
+    
+    .redesSociales {
+        height: 3rem;
+        width: 100%;
+        display: flex;
+        align-items: end;
+        padding-bottom: .4rem;
+        color: #dfd6d6;
+        gap: 0.5rem;
+        padding-left: 0.5rem;
+        border-bottom: 2px solid #dfd6d6;
+    }
+    
+    .redesSociales div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: .3rem;
+        font-weight: bold;
+        position: relative;
+    }
+    
+    .redesSociales div::before {
+        position: absolute;
+        content: "";
+        width: 0rem;
+        height: .07rem;
+        background-color: var(--colorMain);
+        left: -1.5rem;
+    }
+    
+    .mainContent {
+        flex-direction: column;
+        display: flex;
+    }
+    
+    .mainContent .descripcion {
+        width: 99%;
+        padding-left: 1rem;
+        color: white;
+        font-size: 1.2rem;
+        font-style: oblique;
+        text-align: left;
+    }
+    
+    .mainContent>div {
+        width: 46%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 14rem;
+    }
+    
+    .fotoCarlos {
+        width: 11rem;
+        height: 11rem;
+        background-image: url(../assets/carlos.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scale(1.5);
+        border-radius: 47% 67% / 53%;
+        position: absolute;
+        top: 23%;
+        left: 49%;
+        margin-top:0rem;
+    }
+ 
+    .mainText{
+        padding-left: 1rem;
+    }
+    .stickyWhatsapp {
+
+        left: 81%;
+    }
+    
+}
+@media (min-width: 950px) {
+    
+    .fotoCarlos{
+        margin-top: 1rem;
+    }
+    .stickyWhatsapp {
+        left: 94%;
+    }
+}

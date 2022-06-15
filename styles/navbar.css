@@ -1,0 +1,202 @@
+:root {
+    --colorMain: #d17f21;
+}
+
+html.active {
+    overflow: hidden;
+}
+
+/* ====== NAV MOBILE ====== */
+
+
+
+.navMobile {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+    padding: 0 1rem 0 2rem;
+    background-color: #000000;
+    z-index: 10;
+
+    color: white;
+}
+
+.logoNav {
+    z-index: 3;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.logoNav span {
+    color: var(--colorMain);
+}
+
+
+.btnNav {
+    height: 100%;
+    width: 1.5rem;
+    position: relative;
+}
+
+.btnNav span {
+    width: 100%;
+    height: 3px;
+    content: "";
+    background-color: rgb(250, 250, 250);
+    z-index: 5;
+    position: absolute;
+    transition: .3s;
+}
+
+.burgerT {
+    top: 9px;
+}
+
+.btnNav.active .burgerT {
+    top: 20px;
+    transform: rotate(45deg);
+}
+
+.burgerM {
+    top: 18px;
+}
+
+.burgerB {
+    top: 27px;
+}
+
+.btnNav.active :is(.burgerB, .burgerM) {
+    transform: rotate(-45deg);
+    top: 20px;
+}
+
+.navSlide {
+    position: fixed;
+    z-index: 3;
+    background-color: #000000;
+    height: 100vh;
+    top: 3rem;
+    left: 100%;
+    width: 100%;
+    transition: 1s;
+
+}
+
+.navSlide.active {
+    left: 0%;
+}
+
+.navItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    height: 100vh;
+    list-style: none;
+}
+
+.navMobile .navItems a {
+    text-align: center;
+    letter-spacing: .4rem;
+    transition: .5s;
+}
+
+.navMobile .navItems a:hover {
+    letter-spacing: .8rem;
+}
+
+.navItems a {
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+}
+
+
+
+.navDesk {
+    display: none;
+    justify-content: space-between;
+    padding: .4rem 3rem;
+    position: fixed;
+    background-color: #000000;
+    width: 100%;
+    z-index: -10;
+
+}
+
+.navDesk .navItems {
+    flex-direction: row;
+    gap: 1rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: relative;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover::before {
+    transform: scaleX(1);
+}
+
+/* TABLET */
+@media (min-width: 700px) {
+    .navSlide.active {
+        left: 55%;
+    }
+
+    .navSlide {
+        left: 101%;
+        width: 50%;
+        transition: 1s;
+
+    }
+
+    .navItems {
+        height: 28vh;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 0rem;
+
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+    .navDesk {
+        display: flex;
+        z-index: 10;
+
+    }
+
+    .navMobile {
+        display: none;
+        z-index: -10;
+
+    }
+}

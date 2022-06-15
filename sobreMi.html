@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Ibarra Fotografo Profesional - Peru</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/sobreMi.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navDesk">
+            <div class="logoNav"> C<span>I</span></div>
+            <ul class="navItems">
+                <li><a href="./index.html">HOME</a> </li>
+                <li><a href="./fotos.html" class="position-relative active">FOTOS</a> </li>
+                <li><a href="./videos.html" class="position-relative">VIDEOS</a> </li>
+                <li><a href="#" class="position-relative">SOBRE MI</a> </li>
+                <li><a href="./contacto.html" class="position-relative">CONTACTO</a> </li>
+            </ul>
+        </nav>
+        <nav class="navMobile">
+            <div class="logoNav"> C<span>I</span></div>
+            <div class="btnNav" onclick="activarOrDesactivar()">
+                <span class="burgerT"></span>
+                <span class="burgerM"></span>
+                <span class="burgerB"></span>
+            </div>
+            <div class="navSlide">
+                <ul class="navItems">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./fotos.html" class="active">FOTOS</a></li>
+                    <li><a href="./videos.html">VIDEOS</a></li>
+                    <li><a href="#">SOBRE MI</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="espacio"></div>
+    <main id="app">
+
+        <div class="stickyWhatsapp"> <i class='bx bxl-whatsapp' @click="redireccionar('WHATSAPP')"></i></div>
+
+
+        <div class="redesSociales">
+            <div @click="redireccionar('INSTAGRAM')" style="cursor:pointer;"> <i class='bx bxl-instagram'></i> INSTAGRAM
+            </div>
+            <div @click="redireccionar('VIMEO')" style="cursor:pointer;"> <i class='bx bxl-vimeo'></i> VIMEO</div>
+            <div @click="redireccionar('LINKEDIN')" style="cursor:pointer;"> <i class='bx bxl-linkedin'></i> LINKEDIN
+            </div>
+        </div>
+
+        <div class="mainText">
+            <p>Bienvenido</p>
+            <h1>Soy <span>Carlos</span>, Fotografo y Director</h1>
+        </div>
+
+        <div class="mainContent">
+            <p class="descripcion">
+                Manejo proyectos de casi <span>todas las escalas y géneros</span>, desde entrevistas de estudio con una
+                sola cámara hasta sesiones comerciales con múltiples cámaras y equipos, en <span>múltiples ubicaciones
+                    alrededor del mundo</span>. Independientemente del alcance o el presupuesto, abordo todos los
+                proyectos de la misma manera… haciéndolo mejor de lo que nunca imaginaste que podría ser. Esto se
+                combina con estudios en Marketing para dar un <span>retorno global</span> a los clientes que buscan una
+                solución integral en sus estrategias de medios. Ayudo a las empresas analizando sus medios digitales y
+                construyendo una estrategia ligada al contenido
+            </p>
+            <div>
+                <div class="fotoCarlos"></div>
+            </div>
+        </div>
+
+        <div class="titulos">
+            <img src="../assets/Titulo-cine-300x218.jpg" alt="" srcset="">
+            <img src="../assets/Master-en-Marketing-300x207.jpg" alt="" srcset="">
+            <img src="../assets/Marketing-por-la-Universidad-de-davis-1-300x232.jpg" alt="" srcset="">
+        </div>
+    </main>
+
+
+
+    </div>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KB04P4P15R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KB04P4P15R');
+    </script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <script src="./scripts/data/videos.js"></script>
+    <script src="./scripts/data/imagenes.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
