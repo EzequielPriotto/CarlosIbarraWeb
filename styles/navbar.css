@@ -163,7 +163,9 @@ a::before {
 a:hover::before {
     transform: scaleX(1);
 }
-
+a:hover{
+    color: white;
+}
 /* TABLET */
 @media (min-width: 700px) {
     .navSlide.active {

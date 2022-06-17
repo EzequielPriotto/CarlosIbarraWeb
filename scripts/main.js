@@ -52,7 +52,7 @@ const APP = Vue.createApp({
       this.activeScreen ? bodyModal.style.display = "none" : bodyModal.style.display = "flex";
       this.activeScreen = !this.activeScreen;
     },
-
+  
   },
 }).mount('#app')
 let html = document.querySelector("html")

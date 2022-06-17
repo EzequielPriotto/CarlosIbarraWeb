@@ -148,6 +148,15 @@ html.active{
     width: 100%;
     height: 100%;
 }
+.videoConflic{
+    grid-row: span 1 ;
+}
+.fotoConflic3{
+    grid-row:span 3 ;
+}
+.fotoConflic{
+    grid-row:span 2 ;
+}
 
 @keyframes move-down {
     0%{
@@ -205,6 +214,7 @@ html.active{
 
         left: 91%;
     }
+   
 }
 
 
@@ -212,11 +222,24 @@ html.active{
     .h-3{
         grid-row: span 3;
     }
-
+    .videoConflic{
+        grid-row: span 2 ;
+    }
+    .fotoConflic{
+        grid-row: span 3;
+    }
+    .fotoConflic2{
+        grid-column: span 6;
+    }
+    .fotoConflic4{
+        grid-row: span 2;
+    }
+    
 }
 @media (min-width: 950px) {
     
     .stickyWhatsapp {
         left: 94%;
     }
+  
 }

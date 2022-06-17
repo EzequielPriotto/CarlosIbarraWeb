@@ -125,14 +125,15 @@ h2 span {
     font-size: 1.4rem;
 }
 
-.flores {
-    width: 10rem;
-    align-self: flex-end;
-    display: flex;
-}
-
-.girl {
-    display: none;
+.map {
+    position: static;
+    border: 0px;
+    width: 90%;
+    height: 19rem;
+    top: 30.9rem;
+    left: 0.5rem;
+    border-radius: 5px;
+    margin: 2rem 0;
 }
 
 /* ===========ELEMENTOS SUELTOS=========== */
@@ -170,24 +171,28 @@ h2 span {
     .stickyWhatsapp {
         left: 86%;
     }
- 
+
 }
+
 @media (max-width: 500px) {
     .redSocial {
         padding-left: .7rem;
     }
-    
+
 }
+
 @media (min-width: 500px) {
     .redSocial {
         padding-left: 1.7rem;
     }
-    
+
 }
+
 @media (min-width: 700px) {
     .flores {
         display: none;
     }
+
     .girl {
         display: flex;
         position: absolute;
@@ -197,9 +202,9 @@ h2 span {
         ;
     }
 }
+
 @media (max-width: 800px) {
     .stickyWhatsapp {
-
         left: 81%;
     }
 
@@ -212,16 +217,36 @@ h2 span {
 }
 
 @media (min-width: 950px) {
-    
+
     .fotoCarlos {
         margin-top: 1rem;
     }
-    
+
     .stickyWhatsapp {
         left: 94%;
     }
-    
+
     .redSocial {
         padding-left: 4.5rem;
     }
+}
+
+@media (min-width: 1100px) {
+    .map {
+        position: absolute;
+        left: 27.9rem;
+        border: 0px;
+        width: 58%;
+        height: 28rem;
+        top: 0.9rem;
+        border-radius: 5px;
+        margin: 2rem 0;
+    }
+}
+@media (min-width: 1200px) {
+    .map {
+        left:30.9rem;
+    }
+   
+
 }
