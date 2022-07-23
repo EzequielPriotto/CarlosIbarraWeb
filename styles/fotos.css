@@ -82,7 +82,9 @@ transform: scale(1.1);
     grid-column: span 4;
 }
 
-
+.w-6{
+    grid-column: span 6;
+}
 .h-1{
     grid-row: span 1;
 }
@@ -219,19 +221,10 @@ html.active{
 
 
 @media (min-width: 900px) {   
-    .h-3{
+    /* .h-3{
         grid-row: span 3;
-    }
-    .videoConflic{
-        grid-row: span 2 ;
-    }
-    .fotoConflic{
-        grid-row: span 3;
-    }
-    .fotoConflic2{
-        grid-column: span 6;
-    }
-    .fotoConflic4{
+    } */
+    .h-1{
         grid-row: span 2;
     }
     

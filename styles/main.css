@@ -58,7 +58,7 @@ body {
     z-index: -1;
 }
 .carousel-item:first-child {
-    background-image: url("https://cdn.filestackcontent.com/mUVYNo0TS5GotoeWaw34");
+    background-image: url("https://cdn.filestackcontent.com/es60diT1SWCUD0LR3tvc");
 }
 .textHero {
     box-shadow: 0px -30px 70px black;
@@ -350,21 +350,37 @@ html.active{
 }
 
 @media (min-width: 415px) {
-
+    
     .textHero div {
         height: 81px;
         top: 34px;
     }
-
+    
     .textHero h2 {
-        padding-top: 2rem;
+        /* padding-top: 2rem; */
     }
     .stickyWhatsapp {
-left: 86%;
+        left: 86%;
     }
     
 }
+@media (min-width: 580px) {
+    .carousel-item{
+        height: 85vh;
+    }
+    .textHero div {
+       top: 8px;
+   }  
+}
+@media (min-width:600px) {
+    .textHero div {
+        height: 81px;
+       top: 10px;
+   }  
+}
+
 @media (min-width: 700px) {
+
     .about {
         min-height: 20rem;
         width: 100%;
@@ -378,6 +394,10 @@ left: 86%;
         width: 69%;
         height: 7rem;
     }
+    .textHero div {
+         height: 81px;
+        top: 10px;
+    }   
 
 }
 
@@ -390,19 +410,16 @@ left: 86%;
     }
    
     .textHero h2 {
-        padding-top: 3rem;
+        /* padding-top: 3rem; */
         font-size: 3rem;
         padding-left: 5rem;
     }
-
     .textHero div {
-        top: 61px;
+        top: 17.2px;
+        height: 103px;
         left: 23px;
-        height: 99px;
-
-
     }
-
+    
     .stickyWhatsapp {
 
         left: 91%;
@@ -416,15 +433,16 @@ left: 86%;
     }
     
 }
-
+@media (min-width: 1000px) {
+  
+}
 @media (min-width: 1200px) {
 
     .textHero h2 {
-        padding-top: 3rem;
+        /* padding-top: 3rem; */
         padding-left: 4rem;
     }
 
-    .textHero div {
         top: 42px;
         height: 76px;
         left: 23px;
