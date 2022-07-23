@@ -10,8 +10,8 @@ const APP = Vue.createApp({
       navActive: false,
       videoFocus:"",
       activeScreen: false,
-      imagenesCarrousel:[{url:"https://cdn.filestackcontent.com/G4jH4RxrTFCEDgJbnemi"},{url:"https://cdn.filestackcontent.com/BmndT2D3TMiPfPxCYEVU"},{url:"https://cdn.filestackcontent.com/JP5sb1YSVKhQjSbnZUiK"},{url:"https://cdn.filestackcontent.com/wMqQ37GgRKuKsRJx1DPX"},{url:"https://cdn.filestackcontent.com/Org2smQYRUG9jtjUX1DJ"},
-                         {url:"https://cdn.filestackcontent.com/YWEijNbQwWbR6t9MomMS"},]
+      imagenesCarrousel:[{url:"https://cdn.filestackcontent.com/VXhUawETd2RFcBfLwugG"},{url:"https://cdn.filestackcontent.com/BTaGQcPQsShfRR0nyg4n"},{url:"https://cdn.filestackcontent.com/JXaXnvRnSoqtnBsp4hzx"},{url:"https://cdn.filestackcontent.com/jDEIV0uIRGil1zuM0kwd"},
+                         ]
     }
   },
   created() {
